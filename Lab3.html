@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -49,7 +50,7 @@
       }
       .button {
         /* To position the buttons to the same position of the text fields */
-        padding-left: 75%;
+        padding-left: 80s%;
         /* same size as the label elements */
       }
       input[type=radio]{
@@ -57,18 +58,14 @@
         width: 5%;
 
       }
-      input [name=Age]
-      {
-        color: blue;
-        text-align:left;
-      }
+
         input[type=checkbox]{
           width: 5%;
           margin-left: 10%;
         }
       button {
         /* This extra margin represent roughly the same space as the space between the labels and their text fields */
-        margin-left: 50%;
+        margin-left: %;
       }
 
 h4,h1{
@@ -81,41 +78,43 @@ h4,h1{
 <h1>Voulenteer form</h1>
 <body>
 <h4>My info</h4>
-  <form action="/my-handling-form-page" method="post">
+  <form action="/s.html" method="post">
+
       <div>
           <label for="name">First Name:</label>
-          <input type="text" id="name" name="user_name">
+          <input type="text" id="name" name="first_name_field">
       </div>
       <div>
           <label for="lname">Last Name:</label>
-          <input type="text" id ="lname" name="user_lname" />
+          <input type="text" id ="lname" name="last_name_field" />
       </div>
       <div>
           <label for="num">Phone Number:</label>
-          <input id="num" name="user_num"></input>
+          <input id="num" name="phone_field"></input>
       </div>
       <div>
           <label for="mail">E-mail:</label>
-          <input type="email" id="mail" name="user_mail">
+          <input type="email" id="mail" name="email_field">
       </div>
 
       <div class="Gender">
         <label for="radio">Gender:</label><br>
-        <input type="radio" name="Gender" value="Male"> Male <br>
-        <input type="radio" name="Gender" value="Female"> Female<br>
+        <input type="radio" name="gender_field" value="Male"> Male <br>
+        <input type="radio" name="gender_field" value="Female"> Female<br>
       </div>
 
       <div class="Age">
+
         <select name="dropdown">
 
-          <option name="Age">  Age
-          <option name="Age" value="under 18"> under 18
-          <option name="Age" value="18-24"> 18-24
-          <option name="Age" value="25-35"> 25-34
-          <option name="Age" value="35-44"> 35-44
-          <option name="Age" value="45-54"> 45-54
-          <option name="Age" value="55-64"> 55-64
-          <option name="Age" value="65+"> 65 +
+          <option name="age_field">  Age
+          <option name="age_field" value="Under 18"> under 18
+          <option name="age_field" value="18-24"> 18-24
+          <option name="age_field" value="25-35"> 25-34
+          <option name="age_field" value="35-44"> 35-44
+          <option name="age_field" value="45-54"> 45-54
+          <option name="age_field" value="55-64"> 55-64
+          <option name="age_field" value="65+"> 65+
           </select>
       </div>
     </form>
@@ -124,13 +123,13 @@ h4,h1{
 <form>
       <div>
         <br><label for="checkbox"> Days Available: </label>
-        <br><input type="checkbox" name="Sunday" value="on"> Sunday
-        <br><input type="checkbox" name="Monday" value="on"> Monday
-        <br><input type="checkbox" name="Tuesday" value="on"> Tuesday
-        <br><input type="checkbox" name="Thursday" value="on"> Thursday
-        <br><input type="checkbox" name="Wednesday" value="on"> Wednesday
-        <br><input type="checkbox" name="Friday" value="on"> Friday
-        <br><input type="checkbox" name="Saturday" value="on"> Saturday
+        <br><input type="checkbox" name="available_field[]" value="on"> Sunday
+        <br><input type="checkbox" name="available_field[]" value="on"> Monday
+        <br><input type="checkbox" name="available_field[]" value="on"> Tuesday
+        <br><input type="checkbox" name="available_field[]" value="on"> Thursday
+        <br><input type="checkbox" name="available_field[]" value="on"> Wednesday
+        <br><input type="checkbox" name="available_field[]" value="on"> Friday
+        <br><input type="checkbox" name="available_field[]" value="on"> Saturday
 
       </div>
 
