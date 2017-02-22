@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+<title>HTML Form</title>
+    <style>
+      form {
+        /* Just to center the form on the page */
+        margin-left:5% ;
+        width: 80%;
+        /* To see the outline of the form */
+        padding: 2.5%;
+        border: 1px solid #CCC;
+        border-radius: 1em;
+      }
+      form div + div {
+        margin-top: 5%;
+      }
+      label {
+        /* To make sure that all labels have the same size and are properly aligned */
+        display: inline-block;
+        width: 10%;
+        text-align: right;
+      }
+      label[for=comments]{
+          width:50%;
+      }
+      input, textarea {
+        /* To make sure that all text fields have the same font settings By default, textareas have a monospace font */
+        font: 1em sans-serif;
+        /* To give the same size to all text fields */
+        width: 55%;
+        box-sizing: border-box; /* To harmonize the look & feel of text field border */
+        border: 1px solid #999;
+      }
+      input:focus, textarea:focus {
+        /* To give a little highlight on active elements */
+        border-color: #000;
+      }
+      textarea {
+        /* To properly align multiline text fields with their labels */
+        vertical-align: top;
+        /* To give enough room to type some text */
+        height: 5em;
+        width: 75%;
+      }
+      .button {
+        /* To position the buttons to the same position of the text fields */
+        padding-left: 75%;
+        /* same size as the label elements */
+      }
+      input[type=radio]{
+        width: 10%;
+      }
+      input [name=Age]
+      {
+        color: blue;
+        text-align:left;
+      }
+        input[type=checkbox]{
+          width: 10%;
+        }
+      button {
+        /* This extra margin represent roughly the same space as the space between the labels and their text fields */
+        margin-left: 50%;
+      }
+
+h4{
+  margin-left: 5%;
+
+}
+    </style>
+
+
+</head>
+<h1>Voulenteer form</h1>
+<body>
+<h4>My info</h4>
+  <form action="/my-handling-form-page" method="post">
+      <div>
+          <label for="name">First Name:</label>
+          <input type="text" id="name" name="user_name">
+      </div>
+      <div>
+          <label for="lname">Last Name:</label>
+          <input type="text" id ="lname" name="user_lname" />
+      </div>
+      <div>
+          <label for="num">Phone Number:</label>
+          <input id="num" name="user_num"></input>
+      </div>
+      <div>
+          <label for="mail">E-mail:</label>
+          <input type="email" id="mail" name="user_mail">
+      </div>
+
+      <div class="Gender">
+        <label for="radio">Gender:</label><br>
+        <input type="radio" name="Gender" value="Male"> Male <br>
+        <input type="radio" name="Gender" value="Female"> Female<br>
+      </div>
+
+      <div class="Age">
+
+          <label for="radio">Age:</label>
+          <br><input type="radio" name="Age" value="under 18"> under 18
+          <br><input type="radio" name="Age" value="18-24"> 18-24
+          <br><input type="radio" name="Age" value="25-35"> 25-34
+          <br><input type="radio" name="Age" value="35-44"> 35-44
+          <br><input type="radio" name="Age" value="45-54"> 45-54
+          <br><input type="radio" name="Age" value="55-64"> 55-64
+          <br><input type="radio" name="Age" value="65+"> 65 +
+
+      </div>
+    </form>
+
+<h4>My availability</h4>
+<form>
+      <div>
+        <label for="checkbox"> Days Available: </label>
+        <br><input type="checkbox" name="Sunday" value="on"> Sunday
+        <br><input type="checkbox" name="Monday" value="on"> Monday
+        <br><input type="checkbox" name="Tuesday" value="on"> Tuesday
+        <br><input type="checkbox" name="Thursday" value="on"> Thursday
+        <br><input type="checkbox" name="Wednesday" value="on"> Wednesday
+        <br><input type="checkbox" name="Friday" value="on"> Friday
+        <br><input type="checkbox" name="Saturday" value="on"> Saturday
+
+      </div>
+
+      <div>
+        <label for="comments"> Any Comments? </label>
+        <br><textarea id="commentt" name="comment"></textarea>
+
+      </div>
+      <div class="button">
+        <button type="submit">Submit</button>
+      </div>
+  </form>
+
+</body>
+</html>
