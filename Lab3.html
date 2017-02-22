@@ -8,28 +8,31 @@
     <style>
       form {
         /* Just to center the form on the page */
-        margin-left:5% ;
-        width: 80%;
+        margin-left:2.5% ;
+        width: 45%;
         /* To see the outline of the form */
-        padding: 2.5%;
-        border: 1px solid #CCC;
-        border-radius: 1em;
+        padding: 2%;
+        border: 2px solid BLACK;
+        border-radius: 10px;
+
+
       }
       form div + div {
-        margin-top: 5%;
+        margin-top: 2%;
       }
       label {
         /* To make sure that all labels have the same size and are properly aligned */
         display: inline-block;
-        width: 10%;
-        text-align: right;
+
+        width: 15%;
+        text-align: auto;
       }
 
       input, textarea {
         /* To make sure that all text fields have the same font settings By default, textareas have a monospace font */
         font: 1em sans-serif;
         /* To give the same size to all text fields */
-        width: 55%;
+        width: auto;
         box-sizing: border-box; /* To harmonize the look & feel of text field border */
         border: 1px solid #999;
       }
@@ -50,8 +53,9 @@
         /* same size as the label elements */
       }
       input[type=radio]{
-        padding-left:30%;
+        margin-left:10%;
         width: 5%;
+
       }
       input [name=Age]
       {
@@ -59,16 +63,16 @@
         text-align:left;
       }
         input[type=checkbox]{
-          width: 10%;
+          width: 5%;
+          margin-left: 10%;
         }
       button {
         /* This extra margin represent roughly the same space as the space between the labels and their text fields */
         margin-left: 50%;
       }
 
-h4{
-  margin-left: 5%;
-
+h4,h1{
+  margin-left: 2.5%;
 }
     </style>
 
@@ -102,23 +106,24 @@ h4{
       </div>
 
       <div class="Age">
+        <select name="dropdown">
 
-          <label for="radio">Age:</label>
-          <br><input type="radio" name="Age" value="under 18"> under 18
-          <br><input type="radio" name="Age" value="18-24"> 18-24
-          <br><input type="radio" name="Age" value="25-35"> 25-34
-          <br><input type="radio" name="Age" value="35-44"> 35-44
-          <br><input type="radio" name="Age" value="45-54"> 45-54
-          <br><input type="radio" name="Age" value="55-64"> 55-64
-          <br><input type="radio" name="Age" value="65+"> 65 +
-
+          <option name="Age">  Age
+          <option name="Age" value="under 18"> under 18
+          <option name="Age" value="18-24"> 18-24
+          <option name="Age" value="25-35"> 25-34
+          <option name="Age" value="35-44"> 35-44
+          <option name="Age" value="45-54"> 45-54
+          <option name="Age" value="55-64"> 55-64
+          <option name="Age" value="65+"> 65 +
+          </select>
       </div>
     </form>
 
 <h4>My availability</h4>
 <form>
       <div>
-        <label for="checkbox"> Days Available: </label>
+        <br><label for="checkbox"> Days Available: </label>
         <br><input type="checkbox" name="Sunday" value="on"> Sunday
         <br><input type="checkbox" name="Monday" value="on"> Monday
         <br><input type="checkbox" name="Tuesday" value="on"> Tuesday
