@@ -12,10 +12,10 @@
         margin-left:2.5% ;
         width: 45%;
         /* To see the outline of the form */
-        padding: 2%;
+        /*padding: 2%;
         border: 2px solid BLACK;
         border-radius: 10px;
-
+*/
 
       }
       form div + div {
@@ -76,8 +76,11 @@ h4,h1{
 
 </head>
 <h1>Voulenteer form</h1>
-<h4>My info</h4>
+
   <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
+<fieldset>
+<legend>My info</legend>
+
 
       <div>
           <label>First Name:</label>
@@ -117,13 +120,11 @@ h4,h1{
 
           </select>
       </div>
+</fieldset>
 
 
-<h4>My availability</h4>
-
-
-        <p id="available_field">
-
+<fieldset id="available_field">
+<legend>My availability</legend>
         <br><label> Days Available: </label>
 
         <br><input type="checkbox" name="available_field[]" value="Sunday"> Sunday
@@ -133,14 +134,15 @@ h4,h1{
         <br><input type="checkbox" name="available_field[]" value="Thursday"> Thursday
         <br><input type="checkbox" name="available_field[]" value="Friday"> Friday
         <br><input type="checkbox" name="available_field[]" value="Saturday"> Saturday
-       </p>
+
 
 
       <div>
         <label>Any Comments? </label>
         <br><textarea id="comments_field" name="comments_field"></textarea>
+        </div>
+</fieldset>
 
-      </div>
       <div>
          <input type="hidden" name="hidden_field" value="kotIIT">
       </div>
